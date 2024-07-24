@@ -1,0 +1,38 @@
+
+header {
+    width: 1330px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    width: 250px;
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    bottom: 100px; 
+}
+
+main {
+    width: 820px;
+    position: absolute;
+    top: 100px; /* Positioned below the header */
+    left: 250px; /* Positioned to the right of the nav */
+    bottom: 100px; /* Positioned above the footer */
+}
+
+aside {
+    width: 250px;
+    position: absolute;
+    top: 100px; /* Positioned below the header */
+    left: 1070px; /* Positioned to the right of the main */
+    bottom: 120px; /* Positioned above the footer */
+}
+
+footer {
+    width: 1330px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

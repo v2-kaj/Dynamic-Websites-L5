@@ -9,15 +9,14 @@
     <br>
     <br>
     <form action="" method="POST">
-        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="fullname" placeholder="Enter your name">
         <input type="submit" value="Submit">
     </form>
     <?php
         if($_SERVER["REQUEST_METHOD"] == "POST") {
-            $name = $_POST["name"];
+            $name = $_POST["fullname"];
             echo "<h1>Hello, $name!</h1>";  
         }
     ?>
-    
 </body>
 </html>

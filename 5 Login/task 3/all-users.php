@@ -50,7 +50,7 @@ $conn->close();
     </style>
 </head>
 <body>
-    <h1>User Details</h1>
+    <h1>All Users</h1>
     <table>
         <thead>
             <tr>

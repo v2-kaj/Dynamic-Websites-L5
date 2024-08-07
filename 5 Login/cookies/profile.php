@@ -1,6 +1,13 @@
 <?php
 // Start the session
 session_start();
+
+// check if cookie is set
+if(isset($_COOKIE['user_id'])){
+    $_SESSION["user_id"]=$_COOKIE['user_id'];
+    $_SESSION['isloggedin']=True;
+}
+// check if user is logged in
 if(empty($_SESSION["isloggedin"])){
     header("Location: login.php");
     exit();

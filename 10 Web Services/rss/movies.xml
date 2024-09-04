@@ -1,0 +1,30 @@
+<movies>
+    <movie>
+        <title>Angry Birds</title>
+        <director>Clay Kaytis, Fergal Reilly</director>
+        <genre>Animation</genre>
+        <release_year>2016</release_year>
+        <rating>6.3</rating>
+    </movie>
+    <movie>
+        <title>The Nut Job</title>
+        <director>Peter Lepeniotis</director>
+        <genre>Animation</genre>
+        <release_year>2014</release_year>
+        <rating>5.7</rating>
+    </movie>
+    <movie>
+        <title>Penguins of Madagascar</title>
+        <director>Eric Darnell, Simon J. Smith</director>
+        <genre>Animation</genre>
+        <release_year>2014</release_year>
+        <rating>6.7</rating>
+    </movie>
+    <movie>
+        <title>Sing</title>
+        <director>Garth Jennings</director>
+        <genre>Animation</genre>
+        <release_year>2016</release_year>
+        <rating>7.1</rating>
+    </movie>
+</movies>

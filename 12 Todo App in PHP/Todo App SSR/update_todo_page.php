@@ -16,8 +16,7 @@ session_start();
     require_once('connect.php');
 
     // Use prepared statements to secure the query
-    $id = $_GET["id"];
-    $_SESSION['id'] = $id;
+    $id = $_GET["id"]; 
 
     // Prepare SQL statement
     $stmt = $conn->prepare("SELECT * FROM todo WHERE id = ?");
@@ -31,9 +30,10 @@ session_start();
     if ($result->num_rows > 0) {
         // output data of the task
         $task = $result->fetch_assoc();
-        echo "<form action=\"update_todo_processor.php\">";
+        echo "<form action=\"update_todo_processor.php\" method='GET'>";
+        echo "<input type='text' name='id' value='$id'/>";
         echo "<h2>Update Task</h2>";
-        echo "<input type='text' name='task_text' value='".htmlspecialchars($task['text'], ENT_QUOTES)."'/>";
+        echo "<input type='text' name='task_text' value='".$task['text']."'/>";
         echo "<input type='submit' value='Update'>";
         echo "</form>";
     } else {

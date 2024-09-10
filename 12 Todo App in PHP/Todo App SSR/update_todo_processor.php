@@ -4,7 +4,8 @@ session_start();
 require_once('connect.php');
 
 // Retrieve the task ID from the session and task text from the GET request
-$id = $_SESSION['id'];
+$id = $_GET['id'];
+echo $id;
 $text = $_GET['task_text'];
 
 // Prepare the SQL statement with placeholders
